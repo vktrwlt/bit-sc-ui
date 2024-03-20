@@ -15,6 +15,7 @@ const packagesToExclude = ['a-package-to-exclude'];
  */
 module.exports = {
   ...jestConfig,
+  setupFilesAfterEnv: [require.resolve('./jest.setup.js')],
   transformIgnorePatterns: [
     '^.+.module.(css|sass|scss)$',
     generateNodeModulesPattern({

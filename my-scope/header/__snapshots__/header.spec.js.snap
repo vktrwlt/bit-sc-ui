@@ -1,9 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    font-size: 32px;
+  }
+}
+
 <div>
   <div
-    class="sc-aXZVg BmIxF"
+    class="c0"
     font-size="4,5"
   >
     Hello World!

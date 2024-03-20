@@ -12,6 +12,12 @@ it('renders with the correct text', () => {
 it('matches snapshot', () => {
   const {container} =  render(<BasicHeader />);
   
-
   expect(container).toMatchSnapshot();
+});
+
+it('to have attribute', () => {
+  const { getByText } = render(<BasicHeader />);
+  const rendered = getByText('Hello World!');
+
+ expect(rendered).toHaveAttribute('font-size',"4,5")
 });

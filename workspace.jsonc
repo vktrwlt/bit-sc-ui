@@ -63,16 +63,14 @@
         "@teambit/react.react-env": "^1.0.48",
         "@teambit/typescript.typescript-compiler": "^2.0.23",
         "eslint": "^7.28.0",
-        "styled-components": "5.3.11",
         "styled-system": "^5.1.5"
       },
-      "peerDependencies": {}
+      "peerDependencies": {
+        "styled-components": "5.3.11"
+      }
     },
     "linkCoreAspects": true,
-    "rootComponents": true,
-    "overrides": {
-      "styled-components": "5.3.11"
-    }
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
